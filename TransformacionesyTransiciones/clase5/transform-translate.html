@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .shadow {
+        background: lightgray;
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+      }
+      .circle {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+        background-color: #52acff;
+        background-image: linear-gradient(180deg, #52acff 25%, #ffe32c 100%);
+      }
+
+      .circle:hover{
+        /* transform: translate(-30px, 30px); */
+        /* Solo funciona un translate solo tomara el ultimo que se encuentre */
+        transform: translateX(150px);
+        transform: translateY(150px);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shadow">
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>
